@@ -14,7 +14,7 @@
         "purpose": "maskable any"
       }
     ],
-    "start_url": "http://pwa.loc/index.html",
+    "start_url": "https://pwa-nine-drab.vercel.app/",  
     "scope": ".",
     "background_color": "#ffffff",
     "display": "standalone",
