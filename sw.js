@@ -4,10 +4,10 @@ self.addEventListener("install", event => {
 	// Kick out the old service worker
 	self.skipWaiting();
 
-	event.waitUntil(
-		caches.open(cacheName).then(cache => {
+	//event.waitUntil(
+		//caches.open(cacheName).then(cache => {
 
-			return cache.addAll([
+			//return cache.addAll([
 				// "/",
 				// "/icons/android-chrome-36x36.png", // Favicon, Android Chrome M39+ with 0.75 screen density
 				// "/icons/android-chrome-48x48.png", // Favicon, Android Chrome M39+ with 1.0 screen density
@@ -45,9 +45,9 @@ self.addEventListener("install", event => {
 				// "/icons/safari-pinned-tab.svg", // Favicon, Safari pinned tab
 				// "/icons/share.jpg", // Social media sharing
 				// "/css/style.css", // Main CSS file
-			]);
-		})
-	);
+			//]);
+		//})
+	//);
 });
 
 self.addEventListener("activate", event => {
