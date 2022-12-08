@@ -8,33 +8,7 @@ const staticFiles = [
 ];
 
 const routes = [
-  '/',
-  '/media',
-  '/audio',
-  '/audio-recording',
-  '/geolocation',
-  '/device-orientation',
-  '/device-motion',
-  '/web-share',
-  '/share-target',
-  '/multi-touch',
-  '/speech-synthesis',
-  '/speech-recognition',
-  '/page-lifecycle',
-  '/notifications',
-  '/screen-orientation',
-  '/bluetooth',
-  '/network-info',
-  '/contacts',
-  '/ar-vr',
-  '/info',
-  '/payment',
-  '/authentication',
-  '/wake-lock',
-  '/vibration',
-  '/nfc',
-  '/file-system',
-  '/barcode'
+  '/'
 ];
 
 const filesToCache = [
