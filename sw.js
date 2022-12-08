@@ -1,5 +1,13 @@
 //const cacheName = "cache1"; // Change value to force update
 
+const keyboard = navigator.keyboard;
+keyboard.getLayoutMap()
+.then((keyboardLayoutMap) => {
+  const upKey = keyboardLayoutMap.get('KeyW');
+  window.alert(`Press ${upKey} to move up.`);
+})
+
+
 self.addEventListener("install", event => {
 	// Kick out the old service worker
 	self.skipWaiting();
