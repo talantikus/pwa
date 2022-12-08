@@ -47,7 +47,6 @@
 	<script>
 		if ("serviceWorker" in navigator) {
 			window.addEventListener("load", () => {
-				caches.delete(cacheName);
 				navigator.serviceWorker && navigator.serviceWorker.register("./sw.js");
 			});
 		}
@@ -63,7 +62,7 @@
 
  <body>
 
-	<h1>GUTEN TAG!</h1>
+	<h1>GUTEN TAG! Hello</h1>
 	 
 	 <button id="vibrate" onclick="vibrate()">Vibrate</button>
 	 
