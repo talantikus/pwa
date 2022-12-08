@@ -50,6 +50,10 @@
 				navigator.serviceWorker && navigator.serviceWorker.register("./sw.js");
 			});
 		}
+		
+		vibrate(){
+			window.navigator.vibrate([200, 1000, 200]);
+		}
 	</script>
 	<script defer src="./main.js"></script>
  </head>
@@ -57,6 +61,8 @@
  <body>
 
 	<h1>GUTEN TAG!</h1>
+	 
+	 <button id="vibrate" onclick="vibrate()">Vibrate</button>
 
  </body>
 
