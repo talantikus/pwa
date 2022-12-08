@@ -55,6 +55,23 @@
 			window.navigator.vibrate([200, 1000, 200]);
 		}
 		
+
+	</script>
+	<script defer src="./main.js"></script>
+ </head>
+
+ <body>
+
+	<h1>GUTEN TAG!</h1>
+	 
+	 <button id="vibrate" onclick="vibrate()">Vibrate</button>
+	 
+	 <button id="find-me" onclick="geoFindMe()">Show my location</button><br />
+	 
+	<p id="status"></p>
+	<a id="map-link" target="_blank"></a>
+	 
+	 <script>
 		function geoFindMe() {
 
 		  const status = document.querySelector('#status');
@@ -84,25 +101,8 @@
 		  }
 
 		}
-
-		document.querySelector('#find-me').addEventListener('click', geoFindMe);
-
-	</script>
-	<script defer src="./main.js"></script>
- </head>
-
- <body>
-
-	<h1>GUTEN TAG!</h1>
-	 
-	 <button id="vibrate" onclick="vibrate()">Vibrate</button>
-	 
-	 <button id="find-me">Show my location</button><br />
-	 
-	<p id="status"></p>
-	<a id="map-link" target="_blank"></a>
-	 
-	 
+		
+	 </script>
 
  </body>
 
