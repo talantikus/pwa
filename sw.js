@@ -6,6 +6,7 @@ self.addEventListener("install", event => {
 
 	event.waitUntil(
 		caches.open(cacheName).then(cache => {
+			caches.delete(cacheName);
 			return cache.addAll([
 				"/",
 				"android-chrome-36x36.png", // Favicon, Android Chrome M39+ with 0.75 screen density
